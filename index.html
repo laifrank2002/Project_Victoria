@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="javascript/image_loader.js"></script>
+	<script>
+		// these need to be loaded good and beforehand.
+		var image_library = {
+			"tents": create_image("assets/buildings/tents.png"),
+			"shacks": create_image("assets/buildings/shacks.png"),
+			"countryhouse": create_image("assets/buildings/countryhouse.png"),
+			"house": create_image("assets/buildings/house.png"),
+			"townhouse": create_image("assets/buildings/townhouse.png"),
+			
+			"wood_cutter": create_image("assets/buildings/wood_cutter.png"),
+			"lumber_mill": create_image("assets/buildings/lumber_mill.png"),
+			
+			"dirt_path": create_image("assets/buildings/dirt_path.png"),
+			"dirt_path_1_N": create_image("assets/buildings/dirt_path_1_N.png"),
+			"dirt_path_1_S": create_image("assets/buildings/dirt_path_1_S.png"),
+			"dirt_path_1_E": create_image("assets/buildings/dirt_path_1_E.png"),
+			"dirt_path_1_W": create_image("assets/buildings/dirt_path_1_W.png"),
+			"dirt_path_2_NS": create_image("assets/buildings/dirt_path_2_NS.png"),
+			"dirt_path_2_EW": create_image("assets/buildings/dirt_path_2_EW.png"),
+			"dirt_path_2_EN": create_image("assets/buildings/dirt_path_2_EN.png"),
+			"dirt_path_2_NW": create_image("assets/buildings/dirt_path_2_NW.png"),
+			"dirt_path_2_SE": create_image("assets/buildings/dirt_path_2_SE.png"),
+			"dirt_path_2_WS": create_image("assets/buildings/dirt_path_2_WS.png"),
+			"dirt_path_3_N": create_image("assets/buildings/dirt_path_3_N.png"),
+			"dirt_path_3_S": create_image("assets/buildings/dirt_path_3_S.png"),
+			"dirt_path_3_E": create_image("assets/buildings/dirt_path_3_E.png"),
+			"dirt_path_3_W": create_image("assets/buildings/dirt_path_3_W.png"),
+			"dirt_path_4": create_image("assets/buildings/dirt_path_4.png"),
+			
+			"destroy": create_image("assets/buildings/destroy.png"),
+			
+			"grasslands": create_image("assets/maps/ddtest.png"),
+		};
+		
+		var audio_library = {
+			
+		};
+		
+		// when the window is loaded, then the engine can be safely initialized
+		window.onload = function()
+		{
+			Engine.initialize();
+		}
+		
+	</script>
+	
+	<script src="javascript/assets.js"></script>
+	<script src="javascript/engine.js"></script>
+	<script src="javascript/canvas_handler.js"></script>
+	
+	<script src="javascript/mouse_handler.js"></script>
+	
+	<script src="javascript/city_handler.js"></script>
+	<script src="javascript/data_manager.js"></script>
+	<script src="javascript/map.js"></script>
+	<script src="javascript/building.js"></script>
+	<script src="javascript/map_palette.js"></script>
+	<script src="javascript/resource_bar.js"></script>
+	
+	<script src="JS_grapher/grapher.js"></script>
+	<script src="JS_grapher/graph.js"></script>
+	<script src="JS_grapher/table.js"></script>
+	
+	<script src="JS_pages/JS_page.js"></script>
+	<script src="JS_pages/JS_button.js"></script>
+	<script src="JS_pages/JS_label.js"></script>
+	<script src="JS_pages/JS_image.js"></script>
+	<script src="JS_pages/JS_panel.js"></script>
+	<script src="JS_pages/page_manager.js"></script>
+	
+</head>
+</body>
+	<div id="canvas_container">
+		<canvas height="500px" width="800px" id="main_canvas">Your browser does not support the canvas element.</canvas>
+	</div>
+	<h1>JS Jigsaw</h1>
+	<h2>By Frank Lai</h2>
+	<h2>Photo Credits to Friends</h2>
+</body>
+</html>
